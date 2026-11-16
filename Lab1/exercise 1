@@ -1,0 +1,16 @@
+#%%
+import math
+# solve ax^2+bx+c=0
+def q_solve(a,b,c):
+    # compute the dicriminate D=b^2-4*a*c
+    D=b**2 - 4*a*c
+    if D>=0:
+        x1=(-b+math.sqrt(D))/(2*a)
+        x2=(-b-math.sqrt(D))/(2*a)
+        return x1,x2
+    else:
+        print("no real solution")
+x1,x2=q_solve(1,4,1)
+print(x1,x2)
+# x1,x2=q_s
+# print(x1,x2)
